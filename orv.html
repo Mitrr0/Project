@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Формы</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <form id="form1">
+        <!- здесь находится все вложенное содержимое формы-->
+        <p>Формы</p>
+            <p>
+                <label for="userid">User ID</label>
+                <input type="text" id="userid" name="user" form="form1" />
+            </p>
+            <p><label for="password">Пароль</label>
+                <input type="password" name="password" id="password" />
+            </p>
+            <p><input id="remember" type="checkbox" name="remember" value="true" />
+                <label for="remember">Запомнить меня</label>
+            </p>
+            <p> <label for="username">Имя пользователя</label>
+                <input type="text" name="username" id="username" value="" />
+            </p>
+            <p>
+                <li>
+                    <input type="submit" name="submit" value="Зарегистрироваться" />
+                </li>
+
+
+            </p>
+            <input type="search" name="mysearch" id="mysearch" value="search" />
+
+    </form>
+
+    <label>
+        Время бронирования:
+        <input type="time" min="17:00" max="22:00" name="dinner" required />
+    </label>
+    <p>
+        <label for="cost">Цена: </label>
+        <input type="number" min="2" max="100" step="5" name="cost" id="cost" required />
+    </p>
+    <p><input type="tel" name="tel" id="tel" placeholder="Введите телефон" />
+        <label for="col"> Цвет: </label>
+        <input pattern="#[0-9A-Fa-f]{6}" name="col" type="color" placeholder="#ffffff " id="col" title="A hash sign followed by 6 hexadecimal digits" />
+        <label for="cc"> Кредитная карта: </label>
+        <input type="text" pattern="[0-9]{13,16}" name="cc" id="cc" title="13 to 16 digit credit card number" placeholder="Кредитная карта №" />
+    </p>
+    <input type="text" value="Not Editable" disabled />
+    <input type="text" value="Not Editable" readonly />
+
+    <p>
+        <input type="submit" value="Отправить эту форму" />
+
+    </p>
+    <p>
+        <input type="reset" value="Очистить эту форму" />
+
+    </p>
+    <p>Какой цвет ваш любимый (выберите один):</p>
+    <ul>
+        <li>
+            <label>
+                red:
+                <input type="radio" name="favoritecolor" value="red" />
+            </label>
+        </li>
+        <li>
+            <label>
+                green:<input type="radio" name="favoritecolor" value="green" />
+            </label>
+        </li>
+        <li>
+            <label>
+                blue:<input type="radio" name="favoritecolor" value="blue" />
+            </label>
+        </li>
+    </ul>
+    <input type="file" name="file" id="file" multiple />
+    <p> <label for="date">Дата: </label>
+        <input id="date" name="date" type="date" placeholder="YYYY-MM-DD" required />
+    </p>
+    <p>
+        <label for="myBrowser">Выберите браузер для заполнения формы:</label>
+        <br />
+        <input list="browsers" id="myBrowser" name="myBrowser" />
+        <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Internet Explorer"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+            <option value="Microsoft Edge"></option>
+        </datalist>
+    </p>
+    <label for="file">File progress:</label>
+    <progress id="file" max="100" value="70">70%</progress>
+    <label for="fuel">Fuel level:</label>
+    <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50"></meter>
+    <label for="range">Диапазон: </label>
+    <input id="range" type="range" min="0" max="30" value="10" step="5" />
+    <p><a href="main.html">Вначало</a></p>
+ 
+
+</body>
+</html>
