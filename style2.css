@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.bmw {
+    width: 25%;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.bmw__image {
+    height: 70px;
+    background-color: white;
+    margin: auto;
+}
+
+.bmw__description {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.img {
+    max-width: auto;
+}
